@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="description" content="Moenish — independent apps and software." />
+  <title>Moenish</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/">Moenish</a>
+      <nav aria-label="Primary navigation">
+        <a href="#apps">Apps</a>
+        <a href="https://github.com/Moenish">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Independent software</p>
+        <h1>Small tools made to be useful.</h1>
+        <p class="lead">
+          Moenish is an independent developer label for focused apps and software projects.
+        </p>
+        <a class="button primary" href="#apps">View apps</a>
+      </div>
+    </section>
+
+    <section id="apps" class="section">
+      <div class="container">
+        <p class="eyebrow">Apps</p>
+        <h2>Projects</h2>
+
+        <div class="cards">
+          <a class="card" href="/OweTally/">
+            <div>
+              <span class="card-kicker">OweTally</span>
+              <h3>Keep track of what you owe — and what you're owed.</h3>
+              <p>A simple, focused way to keep everyday IOUs organized.</p>
+            </div>
+            <span class="arrow">View app →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Moenish</span>
+      <a href="https://github.com/Moenish">GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

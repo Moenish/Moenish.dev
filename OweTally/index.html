@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#111827" />
+  <meta name="description" content="OweTally — a simple way to keep track of what you owe and what you're owed." />
+  <title>OweTally · Moenish</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/">Moenish</a>
+      <nav aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#support">Support</a>
+        <a href="/">All apps</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">OweTally</p>
+        <h1>Keep tabs on what you owe — and what you're owed.</h1>
+        <p class="lead">
+          OweTally is built to make personal IOUs easier to keep track of without unnecessary clutter.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="#about">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container narrow">
+        <p class="eyebrow">About</p>
+        <h2>A focused tool for everyday IOUs.</h2>
+        <p>
+          OweTally aims to make it easy to remember money you owe and money others owe you.
+        </p>
+      </div>
+    </section>
+
+    <section id="support" class="section alt">
+      <div class="container narrow">
+        <p class="eyebrow">Support</p>
+        <h2>Need help?</h2>
+        <p>Support and contact information can be added here before release.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Moenish · OweTally</span>
+      <a href="/">Moenish</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
