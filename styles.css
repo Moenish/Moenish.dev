@@ -273,3 +273,19 @@ footer {
 .document .notice h2 { margin: 0 0 16px; font-size: clamp(1.4rem, 4vw, 1.75rem); }
 .notice p:last-child { margin-bottom: 0; }
 .notice-detail { font-size: .95rem; color: #46536c; }
+
+/* App artwork and honest pre-release store placeholders. */
+.hero-inner.app-hero { max-width: var(--max); display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 48px; align-items: center; }
+.app-hero h1 { font-size: clamp(2.5rem, 5.5vw, 4.75rem); }
+.app-hero-art img { display: block; width: 100%; max-width: 360px; height: auto; margin: auto; border-radius: 24%; box-shadow: 0 24px 64px rgba(0,0,0,.3); }
+.app-card-icon { display: block; border-radius: 20px; margin-bottom: 22px; }
+.store-options { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.store-placeholder { display: flex; flex-direction: column; gap: 2px; padding: 12px 20px; min-width: 170px; border: 1px solid #64718b; border-radius: 12px; color: #c5cde0; background: #111a2e; }
+.store-name { color: #f8fafc; font-weight: 750; font-size: 1.1rem; }
+.store-placeholder > span:last-child, .store-note { font-size: .875rem; }
+.store-note { color: #aeb8cc; margin: 12px 0 0; }
+@media (max-width: 760px) {
+  .hero-inner.app-hero { grid-template-columns: 1fr; gap: 32px; }
+  .app-hero-art { grid-row: 1; }
+  .app-hero-art img { width: 144px; margin: 0; }
+}
