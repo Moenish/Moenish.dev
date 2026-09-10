@@ -11,8 +11,8 @@ Prepared from the OweTally source on 10 September 2026. Only the two store avail
 
 ## Before the app release
 
-- Add the privacy policy URL in Play Console and a working link or policy text inside the app. The current app Settings/About does not expose it.
-- Review support retention wording and provider details against actual handling of moenish.dev@gmail.com. The policies reflect the inspected implementation; country-specific provider disclosures still require the publisher’s country and individual/business status.
+- Add https://moenish.dev/OweTally/privacy/ in Play Console. The updated app source has Settings → About → Privacy policy, which opens this URL in an external browser; rebuild the app to include it.
+- Review support retention wording and provider details against actual handling of moenish.dev@gmail.com. The policies reflect the inspected implementation; the publisher is an individual based in Romania, using the personal developer account previously confirmed. OweTally is completely free, with no ads, subscriptions, or in-app purchases.
 - Complete Play Console Data safety for the final release binary and all included SDKs. Local-only processing is not the same as transmitting data off-device; evaluate user-directed sharing and backups under the form's definitions.
 - No OweTally account-creation feature was found. The support page explains local deletion rather than claiming to offer server-side account deletion.
 - Check target audience, app-access instructions, content rating, and any applicable financial-features declaration in Play Console separately.
@@ -41,5 +41,13 @@ Run `python -m http.server 8080` from this repository and open http://localhost:
 - No app accounts, backend, analytics, advertising, or crash-reporting SDK integration found in inspected source and direct dependencies. Sharing, external viewers, unencrypted exports, and OS backups remain disclosed.
 - Added a separate website/contact privacy notice, linked throughout, with controller identity, purposes, legal basis, voluntary provision, provider transfers, retention criteria, and rights.
 - No placeholder contact details or policy boilerplate tokens remain in rendered pages; only store availability remains unfinished.
-- Review is not a legal certification: publisher country, business/trader status, monetization, actual support retention, and any required service address must be confirmed. Do not invent or publish a home address from unrelated sources.
-- Do not mistake the general app About privacy summary for a complete policy: the app still needs a working policy link or full text before release.
+- Review is not a legal certification: Romania and completely free distribution are confirmed; personal publishing follows the account context. Actual support retention and any applicable commercial-provider disclosures still need to match practice. Do not invent or publish a home address from unrelated sources.
+- The app now links to the full online policy through a dedicated Settings entry, with a selectable URL if browser launch fails. The labels are localized in English, Hungarian, and Romanian. This uses url_launcher; recheck the rebuilt final manifest and release binary.
+
+## Romanian publisher details
+
+- Country: Romania. Publisher: Moenish, publishing personally as Moenish.
+- Completely free app; no ads, subscriptions, or in-app purchases.
+- Privacy notices identify ANSPDCP and preserve the right to approach another competent authority.
+- Romanian Law 365/2002 Articles 1 and 5 govern covered information-society services and provider disclosures, including a domicile/registered address. Free pricing alone does not establish whether an activity is outside the law: indirect economic benefit can matter. No commercial status or address exemption is asserted on the website. Reassess if this becomes a business or commercially promotional activity; do not publish a personal address without confirming applicability.
+- Official sources: https://legislatie.just.ro/Public/DetaliiDocument/153252 and https://dataprotection.ro/?lang=ro&page=Plangeri_meniu
