@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /RELEASE-NOTES.md
+Sitemap: https://moenish.dev/sitemap.xml
